@@ -1,0 +1,72 @@
+* {
+    --primary-color: #000;
+    --primary-color-claro: #111;
+    --secondary-color: #fff;
+}
+
+header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.x1lun4ml.x18b5jzi.x8k23pi.x1g0dm76.xpdmqnj {
+    background: var(--primary-color);
+}
+/*._aigw.x9f619.x1n2onr6.x5yr21d.x17dzmu4.x1i1dayz.x2ipvbc.x1w8yi2h.x78zum5.xdt5ytf.xa1v5g2.x1plvlek.xryxfnj.x14bqcqg.x18pi947
+{
+    background: blueviolet;
+}*/
+* {
+    --background-default: var(--primary-color);
+    --search-input-container-background: var(--primary-color);
+    --filters-container-background: var(--primary-color);
+    --app-background: var(--primary-color); /* pantalla carga*/
+    --rich-text-panel-background: var(--primary-color); /* panel input de texto*/
+    --panel-header-background: var(--primary-color); /* panel de encabezado*/
+    --system-message-background: var(--primary-color); /* fondo boton dia msg*/
+    --outgoing-background: var(--primary-color); /* fondo msg mios*/
+    --incoming-background: var(--primary-color-claro); /* fondo msg otros*/
+    --progress-primary: var(--secondary-color); /*color barra carga*/
+    
+    --outgoing-background-rgb: 90, 90, 90 /*hover en mensjaes mios*/
+    --incoming-background-rgb: 90, 90, 90 /*hover en mensjaes otros*/
+    --intro-background: var(--primary-color);
+    --button-primary-background: var(--secondary-color);
+    --unread-marker-background: var(--secondary-color);
+    --filters-item-active-color: var(--secondary-color);
+    --filters-item-active-background: var(--primary-color-claro);
+    --unread-timestamp: var(--secondary-color); /*texto de hor aultimo msg*/
+    --background-default-active: var(--primary-color-claro); /* color contacto slecioando*/
+    --background-default-hover: var(--primary-color-claro); /* color contacto hover*/
+}
+span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq294.x5a5i1n.xde0f50.x15x8krk {
+    background-color: var(--secondary-color);
+}
+.xg01cxk.x1g0ag68 img {
+    opacity: 0;
+}
+
+/*letrero instalacion app */
+.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.x1qughib.x1q0g3np.x6s0dn4.xz9dl7a.x1a8lsjc.x10l6tqk.x1ey2m1c.xoz0ns6.xh8yej3.x150wa6m.x178xt8z.x13fuv20.xyj1x25 {
+    display: none;
+}
+/*iput contacto*/
+.x9f619.x12lumcd.x1qrby5j.xeuugli.xisnujt.x6prxxf.x1fcty0u.x1fc57z9.xe7vic5.x1716072.x1ygal6x.x89wmna.x1rbbhm9.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x178xt8z.x1lun4ml.xso031l.xpilrb4.x1obq294.x5a5i1n.xde0f50.x15x8krk.x1a2a7pz.x13w7htt.x78zum5.x96k8nx.xdvlbce.x1g0dm76.xpdmqnj.x1ok221b.xu06os2.x13fj5qh.x1xegmmw {
+    background-color: var(--primary-color);
+    border-color: transparent;
+}
+/*fondo chat */
+.x10l6tqk.x13vifvy.x1o0tod.xyw6214.x9f619.x78zum5.xdt5ytf.xh8yej3.x5yr21d.x6ikm8r.x1rife3k.xjbqb8w.x1ewm37j {
+    background-color: var(--primary-color-claro);
+}
+/*fondo chat */
+.x10l6tqk.x1vjfegm.x9f619.x78zum5.x1iyjqo2.x6s0dn4.xl56j7k.xh8yej3.x5yr21d.x7sb2j6.x84yb8i.xt0e3qv.xsknx04 {
+    background-color: var(--primary-color);
+}
+/*fondo carga */
+._alyo._alyw {
+    background-color: var(--primary-color);
+}
+/* Imagen de fondo principal */
+.xg01cxk.x1g0ag68 {
+    background-image: url('https://wallpapers.com/images/hd/cool-anime-girl-pfp-sajuna-inui-dgg3rwh8q6po13o6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
