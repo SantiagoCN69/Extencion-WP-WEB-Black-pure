@@ -1,8 +1,11 @@
 # WhatsApp Web Dark Theme
 
-![Preview](preview.png)
+![image](https://github.com/user-attachments/assets/2685dfd1-77b1-4281-b181-ebdd5c9a004d)
+
+
 
 Un tema oscuro personalizado para WhatsApp Web con efectos de desenfoque y un diseño minimalista en negro puro.
+(el desenfoque en el nombre, foto y mensajes de contactos no esta incluido)
 
 ## Características
 
@@ -30,13 +33,6 @@ Un tema oscuro personalizado para WhatsApp Web con efectos de desenfoque y un di
 - Microsoft Edge (última versión)
 - Cualquier navegador basado en Chromium
 
-## Capturas
-
-![Menú de chat](screenshots/chat-menu.png)
-*Menú de chat con efecto glassmorphism*
-
-![Selector de tema](screenshots/theme-selector.png)
-*Selector de colores integrado*
 
 ## Contribuir
 
