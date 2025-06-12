@@ -21,6 +21,8 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 --incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
 --panel-background: var(--primary-color); /*fondo panel enviar archyivos*/
 --media-editor-thumb-border-active: var(--primary-color); /*borde arcihovs al enviar*/
+--unread-bar-background: var(--primary-color); /*mensaje no leido fondo*/
+--unread-background: var(--primary-color-claro); /*fondo emsnjae no leido pildora*/
 
     --background-default: var(--primary-color);
     --search-input-container-background: var(--primary-color);
@@ -115,6 +117,6 @@ span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq2
     background: transparent;
 }
 /*check msg leido*/
-span.x1q15gih svg {
-    fill: var(--secondary-color);
+span.x1q15gih svg path {
+    fill: rgb(255, 53, 53);
 }
