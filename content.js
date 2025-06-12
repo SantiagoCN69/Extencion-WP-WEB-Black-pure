@@ -9,21 +9,16 @@ function cambiarTexto() {
     const divAlx = document.querySelector('div._al_x');
     
     if (divAlx) {
-        const spans = divAlx.querySelectorAll('span');
-        
-        if (spans.length >= 2) {
-            console.log('¡Elemento encontrado! Cambiando texto...');
-            spans[1].textContent = 'Mod by Santiago Cardona';
-            return true;
-        }
+        console.log('¡Elemento encontrado! Cambiando texto...');
+        divAlx.textContent = 'Mod by Santiago Cardona';
+        return true;
     }
     return false;
 }
 
-// Intentar cambiar el texto inmediatamente
+// El resto del código permanece igual
 let textoCambiado = cambiarTexto();
 
-// Si no se pudo cambiar, configurar el observador
 if (!textoCambiado) {
     console.log('Esperando a que el elemento se cargue...');
     
@@ -34,7 +29,6 @@ if (!textoCambiado) {
         }
     });
 
-    // Observar cambios en el documento
     observer.observe(document.body, {
         childList: true,
         subtree: true
