@@ -13,7 +13,7 @@ function cambiarTexto() {
         
         if (spans.length >= 2) {
             console.log('¡Elemento encontrado! Cambiando texto...');
-            spans[1].textContent = 'Nuevo texto personalizado';
+            spans[1].textContent = 'Mod by Santiago Cardona';
             return true;
         }
     }
