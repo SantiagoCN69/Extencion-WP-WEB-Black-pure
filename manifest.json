@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Estilo Personalizado",
-  "version": "1.0",
-  "description": "Aplica tu propio CSS a una página",
+  "name": "Custom wp by Santiago Cardona",
+  "version": "2.0",
+  "description": "Aplica tu propio estilo WP",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
