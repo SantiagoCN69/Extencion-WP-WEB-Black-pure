@@ -66,3 +66,13 @@ const observer = new MutationObserver(() => {
   
   observerTexto.observe(document.body, { childList: true, subtree: true });
   
+  const observerMod = new MutationObserver(() => {
+    const divMod = document.querySelector('div.x1f6kntn.xhslqc4.xk82a7y.xg87l8a');
+    if (divMod) {
+      divMod.textContent = "Mod by Santiago Cardona Nossa";
+      observerMod.disconnect();
+    }
+  });
+  
+  observerMod.observe(document.body, { childList: true, subtree: true });
+  
