@@ -11,7 +11,7 @@ function cambiarTexto() {
     if (divAlx) {
         console.log('¡Elemento encontrado! Cambiando texto...');
         divAlx.innerHTML = `
-        <span style="vertical-align: middle;">Mod by Santiago Cardona</span>
+        <span style="vertical-align: middle;">Mod by Santiago Cardona Nossa</span>
         <a href="https://github.com/SantiagoCN69/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" 
              x="0px" y="0px" 
              width="24" 
