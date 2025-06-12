@@ -14,6 +14,7 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     /*CARGA INCIAL*/
 --splashscreen-startup-icon: var(--secondary-color); /*icono wp carga*/
 --splashscreen-primary-title: var(--secondary-color); /*titulo wp carga*/
+--modal-backdrop: #000c;
 
 /*CHATS*/
 --panel-background-deeper: var(--primary-color);
