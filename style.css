@@ -26,13 +26,13 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --search-input-container-background-active: var(--primary-color); /*fondo input buscador fuera*/
     --search-input-background: var(--primary-color-claro); /*fondo input buscador dentro*/
     --filters-item-background: var(--primary-color-claro); /*fondo opciones filtro*/
-    --filters-item-background-hover: #333 /*fondo opciones filtro hover*/
-    --filters-item-active-background: #333 /*opcion filtro activa*/
-    --drawer-section-background: var(--primary-color) /*Fondo estados*/
-    --drawer-background-deep: var(--primary-color) /*Fondo estados linea*/
+    --filters-item-background-hover: #333; /*fondo opciones filtro hover*/
+    --filters-item-active-background: #333; /*opcion filtro activa*/
+    --drawer-section-background: var(--primary-color); /*Fondo estados*/
+    --drawer-background-deep: var(--primary-color); /*Fondo estados linea*/
     
-    --outgoing-background-rgb: 90, 90, 90 /*hover en mensjaes mios*/
-    --incoming-background-rgb: 90, 90, 90 /*hover en mensjaes otros*/
+    --outgoing-background-rgb: 90, 90, 90; /*hover en mensjaes mios*/
+    --incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
     --intro-background: var(--primary-color);
     --button-primary-background: var(--secondary-color);
     --unread-marker-background: var(--secondary-color);
