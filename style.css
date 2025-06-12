@@ -13,6 +13,15 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 --splashscreen-startup-icon: var(--secondary-color); /*icono wp carga*/
 --splashscreen-primary-title: var(--secondary-color); /*titulo wp carga*/
 
+/*CHATS*/
+--panel-background-deeper: var(--primary-color);
+--outgoing-background: var(--primary-color); /* fondo msg mios*/
+--incoming-background: var(--primary-color-claro); /* fondo msg otros*/
+--outgoing-background-rgb: 90, 90, 90; /*hover en mensjaes mios*/
+--incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
+--panel-background: var(--primary-color); /*fondo panel enviar archyivos*/
+--media-editor-thumb-border-active: var(--primary-color); /*borde arcihovs al enviar*/
+
     --background-default: var(--primary-color);
     --search-input-container-background: var(--primary-color);
     --filters-container-background: var(--primary-color);
@@ -20,8 +29,6 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --rich-text-panel-background: var(--primary-color); /* panel input de texto*/
     --panel-header-background: var(--primary-color); /* panel de encabezado*/
     --system-message-background: var(--primary-color); /* fondo boton dia msg*/
-    --outgoing-background: var(--primary-color); /* fondo msg mios*/
-    --incoming-background: var(--primary-color-claro); /* fondo msg otros*/
     --progress-primary: var(--secondary-color); /*color barra carga*/
     --WDS-persistent-always-branded: var(--secondary-color); /*color punto nuevos estados*/
     --search-input-container-background-active: var(--primary-color); /*fondo input buscador fuera*/
@@ -37,8 +44,6 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --dropdown-background: transparent; /* menu tres puntos*/
     --dropdown-background-hover: #0005; /* menu tres puntos hover*/
     --status-background: var(--primary-color); /* fondo estados*/
-    --outgoing-background-rgb: 90, 90, 90; /*hover en mensjaes mios*/
-    --incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
     --incoming-background-deeper: var(--primary-color-claro); /*fndo llamadas*/
     --intro-background: var(--primary-color);
     --button-primary-background: var(--secondary-color); /*boton principal*/
@@ -59,7 +64,7 @@ span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq2
     background-color: var(--secondary-color);
 }
 .xg01cxk.x1g0ag68 img {
-    opacity: 0;
+    opacity: 1;
 }
 
 /*letrero instalacion app */
