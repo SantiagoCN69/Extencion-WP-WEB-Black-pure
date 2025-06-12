@@ -35,6 +35,9 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 --reactions-panel-background-color: transparent; /*panel de emojis*/
 --active-tab-marker: var(--secondary-color); /*indicar tab emojis, stickers*/
 --expressions-panel-active-icon-tab-background: var(--primary-color-claro); /*indicar tab emojis, stickers*/
+--panel-background-colored-deeper: var(--primary-color-claro); /*heade modal*/
+--poll-modal-background-color: var(--primary-color-claro); /*heade modal*/
+--poll-modal-footer-background-color: var(--primary-color-claro); /*heade modal*/
 
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--primary-color-claro); /*FONDO TARJETA AJUSTES*/
@@ -186,4 +189,9 @@ span.x1o6zcso.x5yr21d.xh8yej3 {
   ._alpw._ajxj {
     border-radius: 10px;
     transition: transform 0.3s ease;
+  }
+  /*modal*/
+  .xixxii4.x13vifvy.x1o0tod.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xa03szm.xnpuxes.copyable-area {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
   }
