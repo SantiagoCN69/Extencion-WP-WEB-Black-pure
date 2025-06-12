@@ -47,7 +47,8 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --WDS-green-450: var(--secondary-color); /*texto enlaces*/
     --filters-item-active-color: var(--secondary-color);
     --filters-item-active-background: var(--primary-color-claro);
-    --unread-timestamp: var(--secondary-color); /*texto de hor aultimo msg*/
+    --unread-timestamp: var(--secondary-color); /*texto de hora aultimo msg*/
+    --communities-green: var(--secondary-color); /*texto ver mas comunidades*/
     --background-default-active: var(--primary-color-claro); /* color contacto slecioando*/
     --background-default-hover: var(--primary-color-claro); /* color contacto hover*/
 }
