@@ -12,6 +12,11 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     background: blueviolet;
 }*/
 * {
+    /*CARGA INCIAL*/
+--splashscreen-startup-icon: var(--secondary-color); /*icono wp carga*/
+--splashscreen-primary-title: var(--secondary-color); /*titulo wp carga*/
+
+
     --background-default: var(--primary-color);
     --search-input-container-background: var(--primary-color);
     --filters-container-background: var(--primary-color);
@@ -98,5 +103,8 @@ span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq2
 ._ak4w {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    background: transparent;
+}
+._apdl ._apdm:after /*carga aniamicon bug*/{
     background: transparent;
 }
