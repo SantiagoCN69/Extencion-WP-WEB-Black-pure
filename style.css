@@ -3,7 +3,9 @@
     --primary-color-claro: #111;
     --secondary-color: #fff;
 }
-
+a {
+    color: var(--secondary-color);
+}
 header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.x1lun4ml.x18b5jzi.x8k23pi.x1g0dm76.xpdmqnj {
     background: var(--primary-color);
 }
@@ -15,7 +17,7 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 
 /*CHATS*/
 --panel-background-deeper: var(--primary-color);
---outgoing-background: var(--primary-color); /* fondo msg mios*/
+--outgoing-background: #333; /* fondo msg mios*/
 --incoming-background: var(--primary-color-claro); /* fondo msg otros*/
 --outgoing-background-rgb: 90, 90, 90; /*hover en mensjaes mios*/
 --incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
@@ -23,14 +25,30 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 --media-editor-thumb-border-active: var(--primary-color); /*borde arcihovs al enviar*/
 --unread-bar-background: var(--primary-color); /*mensaje no leido fondo*/
 --unread-background: var(--primary-color-claro); /*fondo emsnjae no leido pildora*/
+--ptt-green: var(--secondary-color); /*icono audio en chat lateral*/
+--status-ring-unread: var(--secondary-color); /*icono estado en  lsita chat lateral*/
+--ptt-draft-button-send: var(--primary-color-claro); /*boton evniar audio*/
+--ptt-draft-button-send-hover: var(--primary-color-claro); /*boton evniar audio hover*/
+--ptt-draft-waveform-background: var(--primary-color-claro); /*fpndp audio pa enviar*/
+--ptt-draft-waveform-background-border: #222a;
+--reactions-panel-background-color: transparent; /*panel de emojis*/
+--active-tab-marker: var(--secondary-color); /*indicar tab emojis, stickers*/
+--expressions-panel-active-icon-tab-background: var(--primary-color-claro); /*indicar tab emojis, stickers*/
 
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--primary-color-claro); /*FONDO TARJETA AJUSTES*/
 --background-lightest-hover: var(--primary-color-claro);
+
+/*PANTALLA ESTADOS*/
+--drawer-section-background: var(--primary-color); /*Fondo estados*/
+--drawer-background-deep: var(--primary-color); /*Fondo estados linea*/
+--WDS-persistent-always-branded: var(--secondary-color); /*color punto nuevos estados*/
+--status-background: var(--primary-color); /* fondo estados*/
+
 /*PANTALLA COMUNIDAD*/
 --round-icon-background: var(--primary-color-claro); /*PRIMER ICONO*/
-
---icon-search-back: var(--primary-color-claro);
+--communities-green: var(--secondary-color); /*texto ver mas comunidades*/
+--icon-search-back: var(--secondary-color); 
 
 
 --panel-background-lighter: var(--primary-color); /*lienas de fondo*/
@@ -42,20 +60,20 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --panel-header-background: var(--primary-color); /* panel de encabezado*/
     --system-message-background: var(--primary-color); /* fondo boton dia msg*/
     --progress-primary: var(--secondary-color); /*color barra carga*/
-    --WDS-persistent-always-branded: var(--secondary-color); /*color punto nuevos estados*/
+
     --search-input-container-background-active: var(--primary-color); /*fondo input buscador fuera*/
     --search-input-background: var(--primary-color-claro); /*fondo input buscador dentro*/
     --filters-item-background: var(--primary-color-claro); /*fondo opciones filtro*/
     --filters-item-background-hover: #333; /*fondo opciones filtro hover*/
     --filters-item-active-background: #333; /*opcion filtro activa*/
-    --drawer-section-background: var(--primary-color); /*Fondo estados*/
-    --drawer-background-deep: var(--primary-color); /*Fondo estados linea*/
+
+
     --drawer-gallery-background: var(--primary-color); /*idk*/
     /*--splashscreen-startup-background: var(--primary-color-claro); /* menu tres puntos*/
     /*--splashscreen-startup-background-hover: var(--primary-color-claro); /* menu tres puntos hover*/
     --dropdown-background: transparent; /* menu tres puntos*/
     --dropdown-background-hover: #0005; /* menu tres puntos hover*/
-    --status-background: var(--primary-color); /* fondo estados*/
+
     --incoming-background-deeper: var(--primary-color-claro); /*fndo llamadas*/
     --intro-background: var(--primary-color);
     --button-primary-background: var(--secondary-color); /*boton principal*/
@@ -68,7 +86,7 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --filters-item-active-color: var(--secondary-color);
     --filters-item-active-background: var(--primary-color-claro);
     --unread-timestamp: var(--secondary-color); /*texto de hora aultimo msg*/
-    --communities-green: var(--secondary-color); /*texto ver mas comunidades*/
+
     --background-default-active: var(--primary-color-claro); /* color contacto slecioando*/
     --background-default-hover: var(--primary-color-claro); /* color contacto hover*/
 }
@@ -90,10 +108,6 @@ span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq2
 }
 /*fondo chat */
 .x10l6tqk.x13vifvy.x1o0tod.xyw6214.x9f619.x78zum5.xdt5ytf.xh8yej3.x5yr21d.x6ikm8r.x1rife3k.xjbqb8w.x1ewm37j {
-    background-color: #000b;
-}
-/*fondo chat */
-.x10l6tqk.x1vjfegm.x9f619.x78zum5.x1iyjqo2.x6s0dn4.xl56j7k.xh8yej3.x5yr21d.x7sb2j6.x84yb8i.xt0e3qv.xsknx04 {
     background-color: var(--primary-color);
 }
 /*fondo carga */
@@ -138,3 +152,37 @@ span.x1o6zcso.x5yr21d.xh8yej3 {
 .x1n2onr6.xyw6214.x78zum5.x1r8uery.x1iyjqo2.xdt5ytf.x6ikm8r.x1odjw0f.x1hc1fzr.x1tkvqr7 {
     background-color: var(--primary-color);
 }
+/*icono audio*/
+._akb0._akb5._akb1 span svg > path:nth-of-type(2) {
+    fill: var(--secondary-color);
+  }
+  /*header chat*/
+  header.x1n2onr6.x9f619.x78zum5.x6s0dn4.xh8yej3.x7j6532.x1pl83jw.x1j6awrg.x1te75w5.x1iygr5g.x4eaejv.xcock1l.x1s928wv.xl9llhp.x1qj619r.x1r9ni5o.xvkby78.x42zw1d.x889kno.x1a8lsjc.xf7dkkf.xv54qhq.xu306ak.x1h1zc6f {
+    border-bottom: 1px solid #222a;
+  }
+  /*footer chat*/
+  footer._ak1i {
+    border-top: 1px solid #222a;
+  }
+  /*icono de seciton emojis*/
+  button.xjb2p0i.xk390pu.x1ypdohk.xjbqb8w.x972fbf.x10w94by.x1qhh985.x14e42zd.x1fmog5m.xu25z0z.x140muxe.xo1y3bh.xexx8yu.xyri2b.x18d9i69.x1c1uobl.xjudz8i.xtnn1bt.x9v5kkp.xmw7ebm.xrdum7p span svg path {
+    fill: var(--secondary-color);
+  }
+  /*fondo sticker*/
+  .x1og9o38.xsnuug8.x1xkn691.xfnsgtv.x1bmpntp.x6ikm8r.x10wlt62.x17dzmu4.xm4efwp.xh8yej3.x1wwgg98.x3vt2i0 {
+    background-color: transparent;
+  }
+  /*btn crear sticker*/
+  .x3i1kov.x7ncltm.x178xt8z.x1lun4ml.xso031l.xpilrb4.x13fuv20.x18b5jzi.x1q0q8m5.x1t7ytsu.x1omdb3s.xwczabx.xqqk3jl.xfd60zt.x1xn7y0n.x1uxb8k9.x1vmbcc8.x16xm01d.xt8homm.x11xpdln.x1g2r6go.xwji4o3.x1so62im.x78zum5.xdt5ytf.x6s0dn4.xl56j7k.x1247r65.xng8ra.x1ncwhqj {
+    background: transparent;
+    width: 90%;
+    height: 90%;
+  }
+  /*stickers*/
+  img._alpw._aows._as8t._ajxj._ajxd {
+    transition: transform 0.3s ease;
+  }
+  ._alpw._ajxj {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
