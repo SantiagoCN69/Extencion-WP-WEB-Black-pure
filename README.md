@@ -3,7 +3,6 @@
 ![image](https://github.com/user-attachments/assets/927767c6-077d-4dd1-8718-6b161511b166)
 
 
-
 Un tema oscuro personalizado para WhatsApp Web con efectos de desenfoque y un diseño minimalista en negro puro.
 (el desenfoque en el nombre, foto y mensajes de contactos no esta incluido)
 
