@@ -45,3 +45,24 @@ if (!textoCambiado) {
         subtree: true
     });
 }
+
+const observer = new MutationObserver(() => {
+    const titulo = document.querySelector('h1.xib59rt.xdhfpv1.x1iikomf.xx75k7l');
+    if (titulo) {
+      titulo.textContent = "Bienvenid@ a WhatsApp";
+      observer.disconnect(); // Deja de observar una vez hecho
+    }
+  });
+  
+  observer.observe(document.body, { childList: true, subtree: true });
+
+  const observerTexto = new MutationObserver(() => {
+    const mensaje = document.querySelector('div.xqui205.x1f6kntn.x16h55sf.x1fcty0u.x1rw0npd');
+    if (mensaje) {
+      mensaje.textContent = "Aquí podrás enviar mensajes, compartir archivos y mantenerte conectado fácilmente desde tu computador.";
+      observerTexto.disconnect();
+    }
+  });
+  
+  observerTexto.observe(document.body, { childList: true, subtree: true });
+  
