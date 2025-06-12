@@ -1,6 +1,6 @@
 # WhatsApp Web Dark Theme
 
-![image](https://github.com/user-attachments/assets/2685dfd1-77b1-4281-b181-ebdd5c9a004d)
+![image](https://github.com/user-attachments/assets/927767c6-077d-4dd1-8718-6b161511b166)
 
 
 
