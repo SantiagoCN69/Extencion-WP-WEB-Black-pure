@@ -13,7 +13,6 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
 --splashscreen-startup-icon: var(--secondary-color); /*icono wp carga*/
 --splashscreen-primary-title: var(--secondary-color); /*titulo wp carga*/
 
-
     --background-default: var(--primary-color);
     --search-input-container-background: var(--primary-color);
     --filters-container-background: var(--primary-color);
@@ -42,7 +41,8 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     --incoming-background-rgb: 90, 90, 90; /*hover en mensjaes otros*/
     --incoming-background-deeper: var(--primary-color-claro); /*fndo llamadas*/
     --intro-background: var(--primary-color);
-    --button-primary-background: var(--secondary-color);
+    --button-primary-background: var(--secondary-color); /*boton principal*/
+    --button-primary-background-hover: var(--secondary-color); /*boton principal hover*/
     --unread-marker-background: var(--secondary-color);
     --teal: var(--secondary-color); /*ciruclo estados, color textos algunos*/
     --text-teal: var(--secondary-color); /*ciruclo estados, color textos algunos*/
@@ -104,6 +104,11 @@ span.x1rg5ohu.x11inojt.x16suv20.xo5v014.x1pse0pq.x2b8uid.x16dsc37.xyp3urf.x1obq2
     background: #0001;
     border: 1px solid var(--secondary-color);
 }
-._apdl ._apdm:after /*carga aniamicon bug*/{
+/*carga aniamicon bug*/
+._apdl ._apdm:after {
     background: transparent;
+}
+/*check msg leido*/
+span.x1q15gih svg {
+    fill: var(--secondary-color);
 }
