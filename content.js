@@ -30,11 +30,20 @@ function updateColors(accentColor, backgroundColor) {
     if (backgroundColor) {
         document.documentElement.style.setProperty('--background-color', backgroundColor);
         
-        const bgColor = new Color(backgroundColor);
-        const bgLightColor = bgColor.lighten(0.1).hex();
-        document.documentElement.style.setProperty('--background-color-claro', bgLightColor);
+        // Aumentar cada dígito hexadecimal en 1
+        const hex = backgroundColor.replace('#', '');
+        let newHex = '#';
+        for (let i = 0; i < hex.length; i++) {
+            const char = hex[i];
+            const value = parseInt(char, 16);
+            // Asegurarse de que el valor no exceda F (15)
+            const newValue = Math.min(15, value + 1);
+            newHex += newValue.toString(16).toUpperCase();
+        }
         
+        document.documentElement.style.setProperty('--background-color-claro', newHex);
         console.log('Color de fondo actualizado a:', backgroundColor);
+        console.log('Color de fondo claro actualizado a:', newHex);
     }
 }
 
