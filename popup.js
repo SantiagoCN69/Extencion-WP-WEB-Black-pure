@@ -1,39 +1,42 @@
-// Función para aplicar el color de acento seleccionado
-function applyAccentColor(color) {
-    // Enviamos un mensaje al content script para que actualice el color
+function applyColors(accentColor, backgroundColor) {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.sendMessage(tabs[0].id, {
-            action: 'updateAccentColor',
-            color: color
+            action: 'updateColors',
+            accentColor: accentColor,
+            backgroundColor: backgroundColor
         });
     });
 }
-
-// Cargar el color guardado al abrir el popup
 document.addEventListener('DOMContentLoaded', function() {
-    const colorPicker = document.getElementById('accentColor');
+    const accentColorPicker = document.getElementById('accentColor');
+    const backgroundColorPicker = document.getElementById('backgroundColor');
     const applyButton = document.getElementById('applyColor');
     
-    // Cargar el color guardado si existe
-    chrome.storage.sync.get(['accentColor'], function(result) {
+    chrome.storage.sync.get(['accentColor', 'backgroundColor'], function(result) {
         if (result.accentColor) {
-            colorPicker.value = result.accentColor;
+            accentColorPicker.value = result.accentColor;
+        }
+        if (result.backgroundColor) {
+            backgroundColorPicker.value = result.backgroundColor;
         }
     });
     
-    // Aplicar el color cuando se hace clic en el botón
     applyButton.addEventListener('click', function() {
-        const selectedColor = colorPicker.value;
+        const selectedAccentColor = accentColorPicker.value;
+        const selectedBackgroundColor = backgroundColorPicker.value;
         
-        // Guardar el color seleccionado
-        chrome.storage.sync.set({accentColor: selectedColor}, function() {
-            console.log('Color guardado:', selectedColor);
+        chrome.storage.sync.set({
+            accentColor: selectedAccentColor,
+            backgroundColor: selectedBackgroundColor
+        }, function() {
+            console.log('Colores guardados:', { 
+                accentColor: selectedAccentColor, 
+                backgroundColor: selectedBackgroundColor 
+            });
         });
         
-        // Aplicar el color
-        applyAccentColor(selectedColor);
+        applyColors(selectedAccentColor, selectedBackgroundColor);
         
-        // Cerrar el popup después de aplicar
         window.close();
     });
 });

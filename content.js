@@ -5,46 +5,68 @@ link.href = chrome.runtime.getURL('style.css');
 link.id = 'whatsapp-dark-theme';
 document.head.appendChild(link);
 
-// Función para actualizar la variable CSS --accent-color
-function updateAccentColor(color) {
-    // Actualizar la variable CSS en el root
-    document.documentElement.style.setProperty('--accent-color', color);
-    
-    // También actualizar el color de los enlaces para asegurar consistencia
-    const styleElement = document.createElement('style');
-    styleElement.id = 'accent-color-override';
-    styleElement.textContent = `
-        a, a:visited, a:hover, a:active {
-            color: ${color} !important;
+
+function updateColors(accentColor, backgroundColor) {
+    if (accentColor) {
+        document.documentElement.style.setProperty('--accent-color', accentColor);
+        
+        const styleElement = document.createElement('style');
+        styleElement.id = 'accent-color-override';
+        styleElement.textContent = `
+            a, a:visited, a:hover, a:active {
+                color: ${accentColor} !important;
+            }
+        `;
+        
+        const oldStyle = document.getElementById('accent-color-override');
+        if (oldStyle) {
+            document.head.removeChild(oldStyle);
         }
-    `;
-    
-    // Eliminar el estilo anterior si existe
-    const oldStyle = document.getElementById('accent-color-override');
-    if (oldStyle) {
-        document.head.removeChild(oldStyle);
+        
+        document.head.appendChild(styleElement);
+        console.log('Color de acento actualizado a:', accentColor);
     }
     
-    document.head.appendChild(styleElement);
-    
-    console.log('Color de acento actualizado a:', color);
+    if (backgroundColor) {
+        document.documentElement.style.setProperty('--background-color', backgroundColor);
+        
+        const bgColor = new Color(backgroundColor);
+        const bgLightColor = bgColor.lighten(0.1).hex();
+        document.documentElement.style.setProperty('--background-color-claro', bgLightColor);
+        
+        console.log('Color de fondo actualizado a:', backgroundColor);
+    }
 }
 
-// Escuchar mensajes del popup
+class Color {
+    constructor(hex) {
+        this.hex = hex.startsWith('#') ? hex : `#${hex}`;
+        this.r = parseInt(this.hex.slice(1, 3), 16);
+        this.g = parseInt(this.hex.slice(3, 5), 16);
+        this.b = parseInt(this.hex.slice(5, 7), 16);
+    }
+    
+    lighten(amount) {
+        const r = Math.min(255, Math.floor(this.r + (255 - this.r) * amount));
+        const g = Math.min(255, Math.floor(this.g + (255 - this.g) * amount));
+        const b = Math.min(255, Math.floor(this.b + (255 - this.b) * amount));
+        return new Color(`#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`);
+    }
+    
+    toHex() {
+        return this.hex;
+    }
+}
+
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.action === 'updateAccentColor') {
-        updateAccentColor(request.color);
+    if (request.action === 'updateColors') {
+        updateColors(request.accentColor, request.backgroundColor);
     }
 });
-
-// Cargar el color guardado al iniciar
-chrome.storage.sync.get(['accentColor'], function(result) {
-    if (result.accentColor) {
-        updateAccentColor(result.accentColor);
-    }
+chrome.storage.sync.get(['accentColor', 'backgroundColor'], function(result) {
+    updateColors(result.accentColor, result.backgroundColor);
 });
 
-// Función para cambiar el texto
 function cambiarTexto() {
     const divAlx = document.querySelector('div._al_x');
     
@@ -67,7 +89,6 @@ function cambiarTexto() {
     return false;
 }
 
-// El resto del código permanece igual
 let textoCambiado = cambiarTexto();
 
 if (!textoCambiado) {
@@ -90,7 +111,7 @@ const observer = new MutationObserver(() => {
     const titulo = document.querySelector('h1.xib59rt.xdhfpv1.x1iikomf.xx75k7l');
     if (titulo) {
       titulo.textContent = "Bienvenid@ a WhatsApp";
-      observer.disconnect(); // Deja de observar una vez hecho
+      observer.disconnect();
     }
   });
   
