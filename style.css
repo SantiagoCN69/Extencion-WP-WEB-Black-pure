@@ -14,7 +14,7 @@ header.xa1v5g2.x1n2onr6.x9f619.x78zum5.x6s0dn4.xl56j7k.xbyj736.x5yr21d.x1acz5yr.
     /*CARGA INCIAL*/
 --splashscreen-startup-icon: var(--accent-color); /*icono wp carga*/
 --splashscreen-primary-title: var(--accent-color); /*titulo wp carga*/
---modal-backdrop: #000c;
+--modal-backdrop: #000a;
 
 /*CHATS*/
 --panel-background-deeper: var(--background-color);
@@ -195,7 +195,8 @@ span.x1o6zcso.x5yr21d.xh8yej3 {
     transition: transform 0.3s ease;
   }
   /*modal*/
-  .xixxii4.x13vifvy.x1o0tod.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xa03szm.xnpuxes.copyable-area {
+  .xixxii4.x13vifvy.x1o0tod.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xa03szm.xnpuxes.copyable-area, .xixxii4.x13vifvy.x1o0tod.x9f619.xh8yej3.x5yr21d.x1bpt9pm.xw2csxc.x1odjw0f.xglhzf2.xnpuxes.copyable-area {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
+    background: #000a
   }
