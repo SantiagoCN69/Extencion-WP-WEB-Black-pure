@@ -30,13 +30,11 @@ function updateColors(accentColor, backgroundColor) {
     if (backgroundColor) {
         document.documentElement.style.setProperty('--background-color', backgroundColor);
         
-        // Aumentar cada dígito hexadecimal en 1
         const hex = backgroundColor.replace('#', '');
         let newHex = '#';
         for (let i = 0; i < hex.length; i++) {
             const char = hex[i];
             const value = parseInt(char, 16);
-            // Asegurarse de que el valor no exceda F (15)
             const newValue = Math.min(15, value + 1);
             newHex += newValue.toString(16).toUpperCase();
         }
