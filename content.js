@@ -39,9 +39,20 @@ function updateColors(accentColor, backgroundColor) {
             newHex += newValue.toString(16).toUpperCase();
         }
         
+        // Calcular color para mensajes propios (4 valores más claro)
+        let msgMiosHex = '#';
+        for (let i = 0; i < hex.length; i++) {
+            const char = hex[i];
+            const value = parseInt(char, 16);
+            const newValue = Math.min(15, value + 4);
+            msgMiosHex += newValue.toString(16).toUpperCase();
+        }
+        
         document.documentElement.style.setProperty('--background-color-claro', newHex);
+        document.documentElement.style.setProperty('--msg-mios', msgMiosHex);
         console.log('Color de fondo actualizado a:', backgroundColor);
         console.log('Color de fondo claro actualizado a:', newHex);
+        console.log('Color de mensajes propios actualizado a:', msgMiosHex);
     }
 }
 
