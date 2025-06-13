@@ -2,7 +2,47 @@
 const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.href = chrome.runtime.getURL('style.css');
+link.id = 'whatsapp-dark-theme';
 document.head.appendChild(link);
+
+// Función para actualizar la variable CSS --accent-color
+function updateAccentColor(color) {
+    // Actualizar la variable CSS en el root
+    document.documentElement.style.setProperty('--accent-color', color);
+    
+    // También actualizar el color de los enlaces para asegurar consistencia
+    const styleElement = document.createElement('style');
+    styleElement.id = 'accent-color-override';
+    styleElement.textContent = `
+        a, a:visited, a:hover, a:active {
+            color: ${color} !important;
+        }
+    `;
+    
+    // Eliminar el estilo anterior si existe
+    const oldStyle = document.getElementById('accent-color-override');
+    if (oldStyle) {
+        document.head.removeChild(oldStyle);
+    }
+    
+    document.head.appendChild(styleElement);
+    
+    console.log('Color de acento actualizado a:', color);
+}
+
+// Escuchar mensajes del popup
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.action === 'updateAccentColor') {
+        updateAccentColor(request.color);
+    }
+});
+
+// Cargar el color guardado al iniciar
+chrome.storage.sync.get(['accentColor'], function(result) {
+    if (result.accentColor) {
+        updateAccentColor(result.accentColor);
+    }
+});
 
 // Función para cambiar el texto
 function cambiarTexto() {
