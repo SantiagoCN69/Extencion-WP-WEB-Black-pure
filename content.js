@@ -173,7 +173,7 @@ function agregarBotonMods() {
       console.log('Contenedor encontrado, agregando enlace...');
       contenedor.innerHTML = `
           <a href="#" 
-             class="x889kno x1a8lsjc x13jy36j x64bnmy x1n2onr6 x1rg5ohu xk50ysn x1f6kntn xyesn5m x1rl75mt x19t5iym xz7t8uv x13xmedi x178xt8z x1lun4ml xso031l xpilrb4 x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x1v8p93f x1o3jo1z x16stqrj xv5lvn5 x1hl8ikr xfagghw x9dyr19 x9lcvmn xbtce8p xcjl5na x14v0smp x1k3x3db xgm1il4 xuxw1ft xv52azi"
+             class="x889kno x1a8lsjc x13jy36j x64bnmy x1n2onr6 x1rg5ohu xk50ysn x1f6kntn xyesn5m x1rl75mt x19t5iym xz7t8uv x13xmedi x178xt8z x1lun4ml xso031l xpilrb4 x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x1v8p93f x1o3jo1z x16stqrj xv5lvn5 x1hl8ikr xfagghw x9dyr19 x9lcvmn xbtce8p xcjl5na x14v0smp x1k3x3db xgm1il4 xuxw1ft xv52azi boton-mods-hover"
              style="color: var(--background-color) !important; text-decoration: none;"
           >
               🔗 Ver más mods
