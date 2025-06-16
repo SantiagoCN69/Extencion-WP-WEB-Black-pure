@@ -43,8 +43,9 @@ a {
 --WDS-green-450: var(--accent-color); /*heade opciones modal*/
 --input-border-active: var(--accent-color); /*borde input*/
 --icon-primary: var(--accent-color); /*icono principal*/
---chat-info-drawer-thumb-background: var(--accent-color); /*fondo de multimeida info chat*/
+--chat-info-drawer-thumb-background: var(--background-color-claro); /*fondo de multimeida info chat*/
 --ptt-thumb-incoming-unplayed: var(--accent-color) !important;
+--reactions-tray-background: #0002;
 
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--background-color-claro); /*FONDO TARJETA AJUSTES*/
