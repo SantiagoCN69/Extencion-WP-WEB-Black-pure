@@ -43,6 +43,8 @@ a {
 --WDS-green-450: var(--accent-color); /*heade opciones modal*/
 --input-border-active: var(--accent-color); /*borde input*/
 --icon-primary: var(--accent-color); /*icono principal*/
+--chat-info-drawer-thumb-background: var(--accent-color); /*fondo de multimeida info chat*/
+--ptt-thumb-incoming-unplayed: var(--accent-color) !important;
 
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--background-color-claro); /*FONDO TARJETA AJUSTES*/
@@ -226,4 +228,15 @@ transition: transform 0.3s ease;
 /*fondo sticker*/
 .x1og9o38.xsnuug8.x1xkn691.xfnsgtv.x1bmpntp.x6ikm8r.x10wlt62.x17dzmu4.xm4efwp.xh8yej3.x1wwgg98.x3vt2i0, .x1n2onr6.x1bmpntp.xzx24n6 {
 background-color: transparent;
+}
+
+.boton-mods-hover {
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    will-change: transform;
+}
+
+.boton-mods-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
