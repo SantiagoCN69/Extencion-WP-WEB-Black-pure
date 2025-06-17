@@ -12,7 +12,7 @@ Un tema oscuro personalizado para WhatsApp Web con efectos de desenfoque y un di
 
 ## Características
 
-- **COLOR DE FONDO Y ACENTO PRINCPAL COMPLETMANTE PERSONALIZABLES**
+- **COLOR DE FONDO Y ACENTO PRINCPAL COMPLETAMENTE PERSONALIZABLES**
 - **Tema Oscuro Total**: Fondo negro puro para una experiencia visual cómoda
 - **Efectos de Desenfoque**: Menús y elementos flotantes con efecto glassmorphism
 - **Sin Anuncios de Instalación**: Elimina el banner de instalación de la aplicación
