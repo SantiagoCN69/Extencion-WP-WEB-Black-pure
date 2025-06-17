@@ -22,6 +22,7 @@ a {
 --search-container-background: var(--background-color); /*fondo de hader buscaqueda chats*/
 --WDS-accent-deemphasized: var(--background-color-claro); /*fondo de filtor sellecioado*/
 --WDS-accent: var(--accent-color); /*fondo de search ajustes sellecioado*/
+--WDS-accent-RGB: var(--accent-color);
 --drawer-background: var(--background-color); /*fondo de header ajustes*/
 
 /*CHATS*/
@@ -248,4 +249,8 @@ background-color: transparent;
 
 .boton-mods-hover:hover {
     transform: translateY(-3px);
+}
+/*fondo input text msg, fondo mensjae airrba de chat d eprivacidad y de fecha hoy, ayer etc..*/
+._amkg, .xe7vic5, .x1k43qru {
+    background-color: var(--background-color-claro) !important;
 }
