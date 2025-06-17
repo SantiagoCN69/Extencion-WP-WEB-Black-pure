@@ -1,6 +1,9 @@
 # WhatsApp Web Dark Theme
 
 ![image](https://github.com/user-attachments/assets/927767c6-077d-4dd1-8718-6b161511b166)
+## Mew version
+
+![image](https://github.com/user-attachments/assets/bc38fd81-e27a-4b3a-b51e-d4834cd4af3e)
 
 
 Un tema oscuro personalizado para WhatsApp Web con efectos de desenfoque y un diseño minimalista en negro puro.
