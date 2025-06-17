@@ -24,6 +24,7 @@ a {
 --WDS-accent: var(--accent-color); /*fondo de search ajustes sellecioado*/
 --WDS-accent-RGB: var(--accent-color);
 --drawer-background: var(--background-color); /*fondo de header ajustes*/
+--WDS-accent-emphasized: var(--accent-color); /*texto filtor sellecioado*/
 
 /*CHATS*/
 --panel-background-deeper: var(--background-color);
