@@ -61,6 +61,9 @@ a {
 --chat-marker-border: var(--accent-color); /*borde info paritipastes grupos*/
 --WDS-surface-emphasized: var(--background-color-claro); /*borde info paritipastes grupos*/
 --audio-track-outgoing: var(--accent-color); /*linea audios archivos*/
+--reactions-panel-search-background-color: var(--background-color-claro); /*panel search emojis*/
+
+
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--background-color-claro); /*FONDO TARJETA AJUSTES*/
 --background-lightest-hover: var(--background-color-claro);
@@ -85,7 +88,7 @@ a {
     --search-input-container-background: var(--background-color);
     --filters-container-background: var(--background-color);
     --app-background: var(--background-color); /* pantalla carga*/
-    --rich-text-panel-background: var(--background-color); /* panel input de texto*/
+    --rich-text-panel-background: transparent; /* fondo seciton emojis stickers*/
     --panel-header-background: var(--background-color); /* panel de encabezado*/
     --system-message-background: var(--background-color); /* fondo boton dia msg*/
     --progress-primary: var(--accent-color); /*color barra carga*/
@@ -267,11 +270,15 @@ background-color: transparent;
 }
 /*visualiador mutlimedia*/
 
-.overlay.x1oyvh86.x78zum5.xdt5ytf.xn4wywj.x114d0zl {
+.overlay/*.x1oyvh86.x78zum5.xdt5ytf.xn4wywj.x114d0zl */{
     background: transparent !important;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
 }
 .x78zum5.x1okw0bk.x15zctf7.x6s0dn4.xng8ra.x114d0zl.xqu7myx, ._ak72._ak7l._ak7y._ap1-._ap1_ {
     background: transparent !important;
+}
+/*separaicon ntns*/
+.xozqiw3 {
+    gap: 10px !important;
 }
