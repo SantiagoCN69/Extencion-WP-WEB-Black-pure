@@ -37,6 +37,7 @@ a {
 --unread-bar-background: var(--background-color); /*mensaje no leido fondo*/
 --unread-background: var(--background-color-claro); /*fondo emsnjae no leido pildora*/
 --ptt-green: var(--accent-color); /*icono audio en chat lateral*/
+/*--ptt-blue: var(--accent-color); /*icono audio en chat lateral*/
 --status-ring-unread: var(--accent-color); /*icono estado en  lsita chat lateral*/
 --ptt-draft-button-send: var(--background-color-claro); /*boton evniar audio*/
 --ptt-draft-button-send-hover: var(--background-color-claro); /*boton evniar audio hover*/
@@ -54,7 +55,12 @@ a {
 --chat-info-drawer-thumb-background: var(--background-color-claro); /*fondo de multimeida info chat*/
 --ptt-thumb-incoming-unplayed: var(--accent-color) !important;
 --reactions-tray-background: #0002;
-
+--chat-marker-background: transparent; /*fondo info paritipastes grupos*/
+--WDS-surface-elevated-emphasized: var(--background-color-claro); /*fondo info paritipastes grupos*/
+--chat-marker: var(--accent-color); /*fondo info paritipastes grupos*/
+--chat-marker-border: var(--accent-color); /*borde info paritipastes grupos*/
+--WDS-surface-emphasized: var(--background-color-claro); /*borde info paritipastes grupos*/
+--audio-track-outgoing: var(--accent-color); /*linea audios archivos*/
 /*PANTALLA AJUSTES*/
 --background-lightest-active: var(--background-color-claro); /*FONDO TARJETA AJUSTES*/
 --background-lightest-hover: var(--background-color-claro);
@@ -163,9 +169,9 @@ span.x1o6zcso.x5yr21d.xh8yej3 {
     fill: var(--accent-color);
   }
   /*icono audio visto*/
-._akb0._akb3._akb1 span svg > path:nth-of-type(2) {
-    fill: var(--background-color-claro);
-  }
+/*._akb0._akb3._akb1 span svg > path:nth-of-type(2) {
+    fill: var(--background-color);
+  }*/
   /*header chat*/
   .x1n2onr6.x9f619.x78zum5.x6s0dn4.xh8yej3.x7j6532.x1j6awrg.x1te75w5.x1iygr5g.x4eaejv.xcock1l.xl9llhp.x1qj619r.x1r9ni5o.xvkby78.x42zw1d.x889kno.x1a8lsjc.xf7dkkf.xv54qhq.x1s928wv.x1h1zc6f.x150wa6m.xstzfhl.x11iowje {
     border-bottom: 1px solid var(--navbar-border);
