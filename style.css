@@ -290,3 +290,7 @@ background-color: transparent;
 .x9qntcr:hover:not(:disabled) {
     background-color: var(--accent-color) !important;
 }
+/*fondo de ventana chat de activar notis*/
+.x78zum5.x1c4vz4f.x2lah0s.xdl72j9.xdt5ytf {
+    background: var(--background-color)
+}
