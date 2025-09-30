@@ -92,6 +92,7 @@ function applyAllChanges() {
   actualizarTitulo();
   actualizarMensaje();
   actualizarMod();
+  eliminarImg();
 }
 
 // Observar cambios en el DOM para mantener los cambios
@@ -122,15 +123,24 @@ applyAllChanges();
 
 // Función para actualizar el título
 function actualizarTitulo() {
-  const titulo = document.querySelector('h1.xib59rt.xdhfpv1.x1iikomf.xx75k7l');
+  const titulo = document.querySelector('h1.xdhfpv1.x1iikomf.xx75k7l.xcytdqz.x9u28bd');
   if (titulo && titulo.textContent !== "Bienvenid@ a WhatsApp") {
       titulo.textContent = "Bienvenid@ a WhatsApp";
   }
 }
 
+function eliminarImg() {
+const img = document.querySelector('.x9r4l05.x1ebt64t svg');
+if (img) {
+    img.remove();
+}
+}
+
+
+
 // Función para actualizar el mensaje
 function actualizarMensaje() {
-  const mensaje = document.querySelector('div.xqui205.x1f6kntn.x16h55sf.x1fcty0u.x1rw0npd');
+  const mensaje = document.querySelector('div.x14mdic9');
   if (mensaje && mensaje.textContent !== "Aquí podrás enviar mensajes, compartir archivos y mantenerte conectado fácilmente desde tu computador.") {
       mensaje.textContent = "Aquí podrás enviar mensajes, compartir archivos y mantenerte conectado fácilmente desde tu computador.";
   }
@@ -167,7 +177,7 @@ function cambiarTexto() {
 }
 
 function agregarBotonMods() {
-  const contenedor = document.querySelector('div._al_t');
+  const contenedor = document.querySelector('div.x1ci5j9l');
   
   if (contenedor && !contenedor.querySelector('a[href="#"]')) {
       console.log('Contenedor encontrado, agregando enlace...');
@@ -176,6 +186,7 @@ function agregarBotonMods() {
       boton.href = '#';
       boton.className = 'x889kno x1a8lsjc x13jy36j x64bnmy x1n2onr6 x1rg5ohu xk50ysn x1f6kntn xyesn5m x1rl75mt x19t5iym xz7t8uv x13xmedi x178xt8z x1lun4ml xso031l xpilrb4 x13fuv20 x18b5jzi x1q0q8m5 x1t7ytsu x1v8p93f x1o3jo1z x16stqrj xv5lvn5 x1hl8ikr xfagghw x9dyr19 x9lcvmn xbtce8p xcjl5na x14v0smp x1k3x3db xgm1il4 xuxw1ft xv52azi boton-mods-hover';
       boton.style.color = 'var(--background-color) !important';
+      boton.style.transition = 'translate 0.3s ease';
       boton.style.textDecoration = 'none';
       boton.textContent = '🔗 Ver más mods';
       
